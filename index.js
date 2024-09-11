@@ -1,8 +1,8 @@
-const express = require("express");
+import express, { json } from "express";
 const app = express();
 const port = 3000;
 
-app.use(express.json());
+app.use(json());
 
 // Data store in memory
 let sampleJson = [
